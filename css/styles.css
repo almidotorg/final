@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis';
+  box-sizing: border-box
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #e11675;
+}
+
+a {
+  color: #bafff8;
+}
+
+hr {
+  margin: 15px 0 15px 0;
+  background-color: #e11675;
+  color: #e11675;
+  height: 5px;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border-radius: 3px;
+}
+
+div.container {
+  background-color: rgb(55, 50, 66);
+  color: aliceblue;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
+/*********************************** TOP **************************************/
+
+#top-blurb {
+  background-image: linear-gradient(rgba(248, 10, 137, 0.7), rgba(0, 0, 0, 0.5)), url('../images/bg img2.png');
+  padding: 1.5em;
+  color: white;
+  border-bottom: 20px solid #e11675;
+  text-shadow: 2px 2px rgb(55, 50, 66);
+  width: stretch;
+}
+
+#top-blurb h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  display: inline-block;
+}
+
+#top-blurb p {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+#top-blurb-img-h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#top-blurb-img-h1 img {
+  width: 100px;
+  align-self: center;
+}
+
+/*********************************** NAVIGATION **************************************/
+
+nav {
+  background-color: #89cdc6;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #373242;
+  font-weight: bold;
+  display: block;
+  flex: 4;
+  width: 100%;
+
+}
+
+nav ul {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 4;
+}
+
+nav li {
+  text-align: center;
+  line-height: 3em;
+  list-style: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
+
+nav li:hover {
+  background-color: #bafff8;
+  flex-grow: 2;
+  width: 100%;
+}
+
+/*********************************** CARD BUTTONS **************************************/
+
+
+.abutton:hover {
+  top: 10px;
+}
+
+.abutton {
+  display: inline-block;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  top: 0;
+  position: relative;
+}
+
+.button {
+  border-radius: 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  width: 294.35px;
+  height: 196.233px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.button.one {
+  background-image: url(../images/inst.png);
+  background-color: #e22773;
+}
+
+.button.two {
+  background-image: url(../images/translation.png);
+  background-color: #384595;
+}
+
+.button.three {
+  background-image: url(../images/ust.png);
+  background-color: #20b2cc;
+}
+
+.button.four {
+  background-image: url(../images/stem.png);
+  background-color: #99bd16;
+}
+
+.button.desc {
+  padding: 20px;
+  margin-top: 110px;
+  top: 0;
+}
+
+.button.desc p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button.desc h3 {
+  font-size: 23px
+}
+
+/*********************************** FOOTER  **************************************/
+
+footer {
+  position: fixed;
+  display: block;
+  color: white;
+  background-color: #e11675;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+}
+
+/*********************************** GALLERY **************************************/
+
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 9px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 5;
+  justify-content: space-around;
+}
+
+div.gallery.item {
+  display: block;
+
+}
+
+div.gallery.item a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*********************************** LOG **************************************/
+
+.entry {
+  margin: 30px 0 30px 0;
+  text-align: left;
+}
+
+.entry h2 {
+  margin-bottom: 10px;
+}
+
+
+/*********************************** MISC. **************************************/
+
+.section {
+  flex: 1;
+}
+
+hr.seperator {
+  height: 2px;
+  background-color: #89cdc6;
+  border: none;
+}
+
+hr.ender {
+  background-color: #89cdc6;
+  border: none;
+}
+
+/*********************************** MEDIA QUERY **************************************/
+
+/**** MOBILE ****/
+
+@media screen and (min-width:0px) {
+
+  img {
+    max-width: 100%;
+  }
+
+  #top-blurb {
+    padding: 1.5em;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  div.container {
+    padding: 5% 5% 20% 5%;
+  }
+
+  nav {
+    background-color: #89cdc6;
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+    justify-content: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #373242;
+    font-weight: bold;
+    display: block;
+    flex: 1;
+  }
+
+  nav ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+    line-height: 3em;
+    list-style: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  nav ul li {
+    flex: 1;
+  }
+
+  div.gallery {
+    padding: 5px;
+  }
+
+  .leftright.con {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/**** TABLETS ****/
+
+@media screen and (min-width:772px) {
+  div.container {
+    padding: 5%;
+  }
+
+  nav {
+    position: sticky;
+  }
+
+  nav ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+  }
+
+  .leftright {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.leftright img {
+  margin: 5% 0 5%;
+}
+
+.abutton {
+  margin: 10px;
+}
+
+/**** COMPUTER ****/
+
+@media screen and (min-width:1040px) {
+  body {
+    background-image: url('../images/bg img2.png');
+    background-color: #e11675;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  div.container {
+    width: 75%;
+  }
+
+  #top-blurb {
+    background-color: rgb(55, 50, 66, 0.75);
+    background-image: none;
+  }
+
+  nav ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    width: 100%
+  }
+
+
+  nav {
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+  }
+
+  .leftright {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .leftright.con {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    max-width: none;
+  }
+}
